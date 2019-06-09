@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web任务07</title>
+        <style type="text/css">
+        *{
+        	padding: 0;
+        	margin: 0;
+        }
+        #_left{
+        	float: left;
+        	width: 130px;
+        	height: 1090px;
+        }
+        #_right{
+        	float: right;
+        	width: 130px;
+        	height: 1090px;
+        }
+        	.header{
+        		height: 30px;
+        		padding-top: 5px;
+        		background-color: #f4f4f4;
+        	}
+        	.header .left{
+        		float: left;
+        		display: inline-block;
+        	}
+        	.header .right{
+        		float: right;
+        		display: inline-block;
+        	}
+        	.nav{
+        		height: 160px;
+        		background-color: #ffffff;
+        		border-bottom: 2px solid #e00304;
+        		text-align: center;
+        		position: relative;
+        	}
+        	.nav #logo{
+        		float: left;
+        	}
+        	.nav .search{
+        		width: 450px;
+        		height: 30px;
+        		margin-top: 50px;
+        		border: 2px solid #e00304;
+        		display: inline-block;
+
+        	}
+        	#text{
+        		float: left;
+        		color: #e1e1e1;
+        		border: 0;
+        		width: 340px;
+        		height: 30px;
+        		padding-left: 10px;
+        	}
+        	#submit{
+        		float: right;
+        		background-color: #e00304;
+        		width: 90px;
+        		height: 30px;
+        		border: 0;
+        		color: #ffffff;
+        	}
+        	.nav .che{
+        		float: right;
+        		background-color: #f5f5f5;
+        		width: 155px;
+        		height: 28px;
+        		border: 1px solid #e3e3e3;
+        		margin: 50px 5px 0px 0px;
+        		padding-top: 2px;
+        	}
+        	.nav .che span{
+        		color: #e00304;
+        	}
+        	#subnav{
+        		float: left;
+        		position: absolute;
+        		top: 125px;
+        		left: 180px;
+        	}
+        	.sub{
+        		width: 80px;
+        		height: 27px;
+        		display: inline-block;
+        		padding-top: 5px;
+        		margin-right: 30px;
+        	}
+        	.suu{
+        		width: 80px;
+        		height: 27px;
+        		color: #ffffff;
+        		display: inline-block;
+        		background-color: #e00304;
+        		padding-top: 5px;
+        	}
+        	.content{
+        		height: 655px;
+        		background-color: #fbfbfb;
+        	}
+        	.submenu{
+        		padding: 20px 0px 20px 0px;
+        	}
+        	.content .left{
+        		float: left;
+        		width: 225px;
+        	}
+        	.left_top{
+        		background-color: #ffffff;
+        		width: 175px;
+        		height: 30px;
+        		padding: 10px 0px 0px 40px;
+        		margin-bottom: 10px;
+        	}
+        	.left_bottom{
+        		background-color: #ffffff;
+        		width: 135px;
+        		height: 515px;
+        		padding-left: 80px;
+        	}
+        	#b{
+        		color: #e00304;
+        		padding: 20px 0px 20px;
+        	}
+        	.content .right{
+        		float: right;
+        		background-color: #ffffff;
+        		width: 970px;
+        		height: 552px;
+        		margin-left: 10px;
+        		padding: 5px;
+        	}
+        	.content .right img{
+        		margin: 10px;
+        		float: left;
+        	}
+        	.footer{
+        		height: 245px;
+        		padding-top: 10px;
+        		background-color: #2e2e2e;
+        	}
+        	.f_top{
+        		color: #d5d5d5;
+        		margin: 0px 130px 0px 130px;
+        		border-bottom: 1px solid #454545;
+        	}
+        	.f_bottom{
+        		color: #848484;
+        		text-align: center;
+        		line-height: 37px;
+        		padding-top: 10px;
+        		font-size: 10px;
+        	}
+        	.topl{
+        		display: inline-block;
+        		padding-right: 210px;
+        	}
+        	.toplm{
+        		display: inline-block;
+               	}
+        	#top1{
+        		font-size: 15px;
+        		margin: 10px 0px 10px 0px;
+        	}
+        	.top2{
+        		font-size: 13px;
+        		margin: 10px 0px 10px 0px;
+        	}
+        </style>
+    </head>
+    <body>
+    	<div id="_left"></div>
+    	<div id="_right"></div>
+    	<div class="header">
+    		<div class="left">
+    			我的收藏&nbsp;&nbsp;
+    			E族之家手机版&nbsp;
+    			<img src="img/qq.jpg">
+    			328203328
+    		</div>
+    		<div class="right">
+    			扫描加入&nbsp;&nbsp;
+    			欢迎来到E族之家，&nbsp;
+    			请登录&nbsp;
+    			|&nbsp;
+    			注册
+    		</div>
+
+    	</div>
+    	<div class="nav">
+    		<div id="logo"><img src="img/logo.jpg"></div>
+    		<div class="search">
+    			<form>
+    				<div class="left"><input id="text" type="text" name="search" value="请输入关键词！"></div>
+    				<div class="right"><input id="submit" type="submit" name="sou" value="搜索"></div>
+    			</form>
+    		</div>
+    		<div class="che">
+    			<img src="img/gou.jpg">
+    			购物车(<span>0</span>)件
+    		</div>
+    		<div id="subnav">
+    			<div class="sub">首页</div>
+    			<div class="sub">E族生活</div>
+    			<div class="sub">E族服务</div>
+    			<div class="suu">E族爱心</div>
+    		</div>
+    	</div>
+    	<div class="content">
+    		<div class="submenu">
+    			<p>当前位置：E族爱心>食品</p>
+    		</div>
+    		<div class="left">
+    			<div class="left_top">
+    				<img src="img/dao.jpg">全部分类
+    			</div>
+    			<div class="left_bottom">
+    				<div id="b">>食品</div>
+    				>生活用品
+    			</div>
+    		</div>
+    		<div class="right">
+    			<img src="img/1.jpg">
+    			<img src="img/2.jpg">
+    			<img src="img/3.jpg">
+    			<img src="img/4.jpg">
+    			<img src="img/1.jpg">
+    			<img src="img/2.jpg">
+    			<img src="img/3.jpg">
+    			<img src="img/4.jpg">
+    		</div>
+    	</div>
+    	<div class="footer">
+    		<div class="f_top">
+    			<div class="topl">
+    				<div id="top1">新手上路</div>
+    				<div class="top2">售后流程</div>
+    				<div class="top2">购物流程</div>
+    				<div class="top2">订购方式</div>
+    			</div>
+    			<div class="topl">
+    				<div id="top1">配送方式</div>
+    				<div class="top2">货到付款区域</div>
+    				<div class="top2">配送支付查询</div>
+    				<div class="top2">支付方式说明</div>
+    			</div>
+    			<div class="topl">
+    				<div id="top1">购物指南</div>
+    				<div class="top2">常见问题</div>
+    				<div class="top2">订购流程</div>
+    				<div class="top2">注册新会员</div>
+    			</div>
+    			<div class="topl">
+    				<div id="top1">售后服务</div>
+    				<div class="top2">退换货原则</div>
+    				<div class="top2">售后服务保证</div>
+    				<div class="top2">换货流程</div>
+    			</div>
+    			<div class="toplm">
+    				<div id="top1">关于我们</div>
+    				<div class="top2">网站故障报告</div>
+    				<div class="top2">联系我们</div>
+    				<div class="top2">投诉与建议</div>
+    			</div>
+    		</div>
+    			<div class="f_bottom">
+    				<p>E族生活&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;居家维修保养&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;住宿优惠信息&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;出行接送&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;E族爱心&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;积分商城</p>
+    				<p><img src="img/bottom.jpg">2017-2018&nbsp;E族之家&nbsp;版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392</p>
+    			</div>
+    	</div>
+    </body>
+</html>
